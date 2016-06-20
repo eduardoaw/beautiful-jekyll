@@ -10,7 +10,7 @@ Este módulozinho me chamou atenção desde a primeira vez que o vi e das coisas
 
 Agora vou demonstrar como utilizar o **ESP8266** em conjunto com o **Arduino UNO** utilizando comandos **AT**, mas esta não é a única forma de utilização deste módulo, uma vez que o mesmo possuí um pequeno processador interno que pode ser programado para operar de forma independente e também possuí um par de [portas GPIO](https://pt.wikipedia.org/wiki/General_Purpose_Input/Output) que permitem controlar outros dispositivos. Atualmente existem trabalhos na comunidade para utilizar o ESP8266 [sem o arduino](http://nodemcu.com/index_en.html), mas isto é assunto para outros artigos. (Interessou-se sobre este assunto? Já pode adicionar [isto](https://www.sparkfun.com/products/9873) a sua lista de desejos!)
 
-<h2><b>Ligação entre Arduino e ESP8266</b></h2>
+<h3>Ligação entre Arduino e ESP8266</h3>
 
 Muita atenção nesta parte, poís, o ESP8266 utiliza apenas **3,3v** para alimentação e I/O. Já o arduino utiliza **5v** nos seu pinos de I/O e se você tentar conecta-lo diretamente, na melhor das hipóteses, pode simplesmente não funcionar e na pior poderá causar danos ao módulo ESP8266. Para contornar isto será necessário o desenvolvimento de um [divisor de tensão](https://en.wikipedia.org/wiki/Voltage_divider) para baixar os 5v do Arduino para os 3,3v suportados pelo ESP8266. Já vi alguns tutoriais que dispensam o uso do divisor de tensão ou ainda que usam os 3,3v do próprio arduino, eu sei que é frustrante chegar aqui e ter que adquirir mais alguns itens e isto pode demorar dias... Aconteceu comigo também, fique a vontade para fazer suas experiências, sempre levando em consideração que isto pode ser fatal para o seu ESP8266.
 
@@ -26,7 +26,8 @@ E ai está a ligação do ESP8266 com o Arduino!
 
 Você pode verificar o esquema de ligação com mais detalhes [aqui](https://github.com/eduardoaw/eduardoaw.github.io/blob/master/files/esparduinofritzing.jpg).
 
-###Programa
+<h3>Programa</h3>
+
 Com a ligação pronta mãos a massa no código! Depois de uma hora coçando a cabeça e tentando fazer ESP8266 comunicar com o arduino utilizando tutoriais que encontrei pela internet, percebi que precisava fazer o básico! Que é uma simples comunicação **RX/TX** utilizando um terminal serial, que pode ser encontrado na IDE do Arduino (Serial Monitor - Símbolo de uma pequena lupa no canto superior direito). Para isto desenvolvi este programa que é pequeno e de fácil entendimento. 
 
 {% highlight c++ linenos %}
@@ -64,22 +65,22 @@ O gif abaixo mostrar como operar o Serial Monitor na IDE do Arduino.
 
 <img src="/files/git_at_esp8266.gif" class="img-thumbnail img-responsive center-block" alt="Serial Monitor operação">
 
-###Comandos AT do ESP8266
+<h3>Comandos AT do ESP8266</h3>
 
 Esta tabela de comandos AT reúne quase todos os comandos disponíveis para ESP8266, caso queira uma mais completa acesse [aqui](https://cdn.sparkfun.com/assets/learn_tutorials/4/0/3/4A-ESP8266__AT_Instruction_Set__EN_v0.30.pdf), porém, seja cauteloso, alguns destes comandos podem ser prejudiciais ao seu ESP8266 se não usados corretamente.
 
 <img src="/img/posts/esp8266-intro/atcommandsesp.jpg" class="img-thumbnail img-responsive center-block" alt="ESP8266 Ligação">
 
-###Testando comandos AT
+<h3>Testando comandos AT</h3>
 
 Usando o programa criado anteriormente é possível testar os comandos AT da tabela acima, vejamos alguns.
 
-####Comandos Básicos
+</h4>Comandos Básicos<h4>
 
 Para testar os comandos a seguir é importante setar os parametros `Both NL & CR` e a `baud rate` que poderá ser `9600, 57600 ou 115200`.
 Para enviar o comando desejado basta preencher o campo texto da janela do Serial Monitor com o comando e após isto clicar em `Send`.
 
-#####Resetando e setando o modo de operação.
+<h5>Resetando e setando o modo de operação</h5>
 
 <img src="/img/posts/esp8266-intro/resetsetesp.jpg" class="img-thumbnail img-responsive center-block" alt="Reset e set modo de operação">
 
@@ -91,7 +92,8 @@ Comandos:
 2. `AT+CWMODE=3`
 	- Configurando o modo WiFi como ponto de acesso e estação
 	
-#####Conectando-se a uma rede.
+<h5>Conectando-se a uma rede</h5>
+
 <img src="/img/posts/esp8266-intro/connectesp.jpg" class="img-thumbnail img-responsive center-block" alt="Conectando-se a uma rede">
 
 Comandos:
@@ -105,12 +107,12 @@ Comandos:
 	
 <blockquote><p>Atribuir um endereço IP para o ESP8266 vai ser útil para montar um servidor TCP nos próximos passos</p></blockquote>
 
-	
-####Conexão TCP
+
+<h4>Conexão TCP</h4>
 
 Para testar a conectividade do ESP8266 criei uma ferramenta chamada [Simple Socket IO](https://github.com/eduardoaw/simplesocketio) e você pode baixa-la [aqui](https://raw.githubusercontent.com/eduardoaw/simplesocketio/master/files/SimpleSocketIO.jar). Simple Socket IO é multiplataforma (para rodar basta ter o [java](https://www.java.com/pt_BR/) instalado em sua máquina) e permite criar um servidor ou cliente TCP. Sinta-se a vontade para construir sua própria implementação de um cliente/servidor em java, c++, python ou em outra linguagem.
 
-#####Criando um cliente TCP para conectar-se na porta 3000 de um servidor.
+<h5>Criando um cliente TCP para conectar-se na porta 3000 de um servidor</h5>
 
 Escolha a opção `Server Mode` do Simple Socket IO para simular um servidor TCP, configure de acordo com a imagem e clique em `Listen`. Neste momento Simple Socket IO está pronto para receber clientes, que no nosso caso será o ESP8266. Clique no Serial Monitor da IDE do Arduino para iniciar o programa no ESP8266.
 
@@ -138,7 +140,7 @@ Comandos:
 
 <blockquote><p>ESP8266 permite até 4 conexões</p></blockquote>	
 
-#####Criando um servidor TCP para receber conexões na porta 5000.
+<h5>Criando um servidor TCP para receber conexões na porta 5000</h5>
 
 Escolha a função Client Mode do Simple Socket IO para simular um cliente TCP, configure de acordo com a imagem, não clique em `Connect` por enquanto, primeiro temos que subir o servidor no ESP8266, faça isso clicando no Serial Monitor da IDE do Arduino e após o comando `AT+CIPSERVER=1,5000` `OK` aparecer na janela do Serial Monitor você pode dar um `Connect`.
 
@@ -163,7 +165,8 @@ Comandos:
 	
 <blockquote><p>Mensagens com o tamanho maior do que foi declarado no segundo parâmetro do comando AT+CIPSEND serão enviadas parcialmente</p></blockquote>
 
-###Fazendo uma coisa útil com ESP8266
+
+<h3>Fazendo uma coisa útil com ESP8266</h3>
 
 Agora que já vimos com funciona a comunicação cliente/servidor e comandos AT do ESP8266 vou mudar o código do programa inicial, para que seja possível ligar um led remotamente!!!
 
