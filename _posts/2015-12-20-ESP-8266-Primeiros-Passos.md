@@ -10,7 +10,8 @@ Este módulozinho me chamou atenção desde a primeira vez que o vi e das coisas
 
 Agora vou demonstrar como utilizar o **ESP8266** em conjunto com o **Arduino UNO** utilizando comandos **AT**, mas esta não é a única forma de utilização deste módulo, uma vez que o mesmo possuí um pequeno processador interno que pode ser programado para operar de forma independente e também possuí um par de [portas GPIO](https://pt.wikipedia.org/wiki/General_Purpose_Input/Output) que permitem controlar outros dispositivos. Atualmente existem trabalhos na comunidade para utilizar o ESP8266 [sem o arduino](http://nodemcu.com/index_en.html), mas isto é assunto para outros artigos. (Interessou-se sobre este assunto? Já pode adicionar [isto](https://www.sparkfun.com/products/9873) a sua lista de desejos!)
 
-###Ligação entre Arduino e ESP8266
+<h2><b>Ligação entre Arduino e ESP8266</b></h2>
+
 Muita atenção nesta parte, poís, o ESP8266 utiliza apenas **3,3v** para alimentação e I/O. Já o arduino utiliza **5v** nos seu pinos de I/O e se você tentar conecta-lo diretamente, na melhor das hipóteses, pode simplesmente não funcionar e na pior poderá causar danos ao módulo ESP8266. Para contornar isto será necessário o desenvolvimento de um [divisor de tensão](https://en.wikipedia.org/wiki/Voltage_divider) para baixar os 5v do Arduino para os 3,3v suportados pelo ESP8266. Já vi alguns tutoriais que dispensam o uso do divisor de tensão ou ainda que usam os 3,3v do próprio arduino, eu sei que é frustrante chegar aqui e ter que adquirir mais alguns itens e isto pode demorar dias... Aconteceu comigo também, fique a vontade para fazer suas experiências, sempre levando em consideração que isto pode ser fatal para o seu ESP8266.
 
 <img src="/img/posts/esp8266-intro/espconnection.jpg" style="float:left;margin-right:15px" class="img-thumbnail img-responsive" alt="ESP8266 Conexão">
