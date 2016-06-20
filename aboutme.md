@@ -1,16 +1,14 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+<img src="/img/guri.jpg" style="float:right;max-height:230px;margin-left:15px" class="img-thumbnail img-responsive" alt="Foto do Guri">
+Este gurizinho ao lado sou eu :D! Sempre gostei de entender como as coisas funcionam, talvez seja por isso que acabava desmontando meus brinquedos e alguns eletrônicos da casa pra saber o que havia lá dentro! 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Bom deixando a nostaligia de lado, eu sou Eduardo, atualmente trabalho como programador de aplicações usando Java EE e Linguagens Web.
 
-What else do you need?
+Sou graduado em Sitemas de Informação pela [URI](http://santoangelo.uri.br) e tenho interesse por novas tecnologias que facilitem a vida do usuário. 
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Fiz esta página para compartilhar o que venho aprendendo e espero que seja útil para a comunidade. 
