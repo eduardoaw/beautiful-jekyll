@@ -80,7 +80,7 @@ Usando o programa criado anteriormente é possível testar os comandos AT da tab
 Para testar os comandos a seguir é importante setar os parametros `Both NL & CR` e a `baud rate` que poderá ser `9600, 57600 ou 115200`.
 Para enviar o comando desejado basta preencher o campo texto da janela do Serial Monitor com o comando e após isto clicar em `Send`.
 
-<h5>Resetando e setando o modo de operação</h5>
+<h4>Resetando e setando o modo de operação</h4>
 
 <img src="/img/posts/esp8266-intro/resetsetesp.jpg" class="img-thumbnail img-responsive center-block" alt="Reset e set modo de operação">
 
@@ -92,7 +92,7 @@ Comandos:
 2. `AT+CWMODE=3`
 	- Configurando o modo WiFi como ponto de acesso e estação
 	
-<h5>Conectando-se a uma rede</h5>
+<h4>Conectando-se a uma rede</h4>
 
 <img src="/img/posts/esp8266-intro/connectesp.jpg" class="img-thumbnail img-responsive center-block" alt="Conectando-se a uma rede">
 
@@ -112,7 +112,7 @@ Comandos:
 
 Para testar a conectividade do ESP8266 criei uma ferramenta chamada [Simple Socket IO](https://github.com/eduardoaw/simplesocketio) e você pode baixa-la [aqui](https://raw.githubusercontent.com/eduardoaw/simplesocketio/master/files/SimpleSocketIO.jar). Simple Socket IO é multiplataforma (para rodar basta ter o [java](https://www.java.com/pt_BR/) instalado em sua máquina) e permite criar um servidor ou cliente TCP. Sinta-se a vontade para construir sua própria implementação de um cliente/servidor em java, c++, python ou em outra linguagem.
 
-<h5>Criando um cliente TCP para conectar-se na porta 3000 de um servidor</h5>
+<h4>Criando um cliente TCP para conectar-se na porta 3000 de um servidor</h4>
 
 Escolha a opção `Server Mode` do Simple Socket IO para simular um servidor TCP, configure de acordo com a imagem e clique em `Listen`. Neste momento Simple Socket IO está pronto para receber clientes, que no nosso caso será o ESP8266. Clique no Serial Monitor da IDE do Arduino para iniciar o programa no ESP8266.
 
@@ -140,7 +140,7 @@ Comandos:
 
 <blockquote><p>ESP8266 permite até 4 conexões</p></blockquote>	
 
-<h5>Criando um servidor TCP para receber conexões na porta 5000</h5>
+<h4>Criando um servidor TCP para receber conexões na porta 5000</h4>
 
 Escolha a função Client Mode do Simple Socket IO para simular um cliente TCP, configure de acordo com a imagem, não clique em `Connect` por enquanto, primeiro temos que subir o servidor no ESP8266, faça isso clicando no Serial Monitor da IDE do Arduino e após o comando `AT+CIPSERVER=1,5000` `OK` aparecer na janela do Serial Monitor você pode dar um `Connect`.
 
