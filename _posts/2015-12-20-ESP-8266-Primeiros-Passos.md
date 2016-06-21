@@ -135,9 +135,9 @@ Comandos:
 
 1. `AT+CWLAP`
 	- Listando redes WiFi próximas
-2. `AT+CWJAP="NomeDaRede"``,"Senha"`
+2. `AT+CWJAP= "NomeDaRede","Senha"`
 	- Conectando-se a uma rede 
-3. `AT+CIPSTA="192.168.1.100"`
+3. `AT+CIPSTA= "192.168.1.100"`
 	- Atribuindo um endereço IP válido para o ESP8266
 	
 <blockquote><p>Atribuir um endereço IP para o ESP8266 vai ser útil para montar um servidor TCP nos próximos passos</p></blockquote>
@@ -162,7 +162,7 @@ Comandos:
 
 1. `AT+CIPMUX=1`
 	- Setando ESP8266 para multiplas conexões 
-2. `AT+CIPSTART=0,"TCP"``,"192.168.1.3",3000`
+2. `AT+CIPSTART= 0,"TCP","192.168.1.3",3000`
 	- 1º Parâmetro id da conexão
 	- 2º Parametro conexão do tipo TCP
 	- 3º Parâmetro IP do computador que esta o Simple Socket IO
