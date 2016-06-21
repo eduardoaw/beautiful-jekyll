@@ -2,8 +2,14 @@
 layout: post
 title: Montando um ambiente para depurar aplicativos Android desenvolvidos com Apache Cordova
 ---
+<a href="#cordova-android-adb">
+	<img src="/img/posts/adb-cordova/cordova_android_adb.jpg" style="float:right;margin-left:15px;max-width:300px" class="img-thumbnail img-responsive" alt="Cordova + Android ADB">
+</a>
 
-<img src="/img/posts/adb-cordova/cordova_android_adb.jpg" style="float:right;margin-left:15px;max-width:300px" class="img-thumbnail img-responsive" alt="Cordova + Android ADB">
+<a href="#_" class="lightbox" id="cordova-android-adb">
+	<img src="/img/posts/adb-cordova/cordova_android_adb.jpg" style="float:right;margin-left:15px;max-width:300px" class="img-thumbnail img-responsive" alt="Cordova + Android ADB">
+</a>
+
 Se você chegou até aqui é porque esta usando o **Cordova** para desenvolvimento de aplicativos móveis
 e deve estar impressionado com seu poder de desenvolvimento. É muito legal mesmo ver o código **JS/HTML**
 rodando em forma de um aplicativo, mas o que você irá ver aqui irá lhe deixar
