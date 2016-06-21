@@ -2,8 +2,13 @@
 layout: post
 title: ESP8266 Primeiros Passos
 ---
+<a href="#esp8266">
+	<img src="/img/posts/esp8266-intro/esp8266.jpg" style="float:right;max-height:230px;margin-left:15px" class="img-thumbnail img-responsive" alt="ESP8266">
+</a>
+<a href="#_" class="lightbox" id="esp8266">
+	<img src="/img/posts/esp8266-intro/esp8266.jpg"  class="img-thumbnail" alt="ESP8266">
+</a>
 
-<img src="/img/posts/esp8266-intro/esp8266.jpg" style="float:right;max-height:230px;margin-left:15px" class="img-thumbnail img-responsive" alt="ESP8266">
 No primeiro artigo desta página, falo sobre as primeiras experiências que tive com o módulo WiFi **ESP8266**, que para ser mais preciso é uma interface WiFi com suporte ao protocolo **TCP/IP** e serve para prover conectividade à microcontroladores, IoT e etc...
 
 Este módulozinho me chamou atenção desde a primeira vez que o vi e das coisas que mais gostei nele foram, seu tamanho reduzido frente a outras opções de conectividade disponíveis e principalmente seu preço que é bem acessível. 
@@ -14,7 +19,12 @@ Agora vou demonstrar como utilizar o **ESP8266** em conjunto com o **Arduino UNO
 
 Muita atenção nesta parte, poís, o ESP8266 utiliza apenas **3,3v** para alimentação e I/O. Já o arduino utiliza **5v** nos seu pinos de I/O e se você tentar conecta-lo diretamente, na melhor das hipóteses, pode simplesmente não funcionar e na pior poderá causar danos ao módulo ESP8266. Para contornar isto será necessário o desenvolvimento de um [divisor de tensão](https://en.wikipedia.org/wiki/Voltage_divider) para baixar os 5v do Arduino para os 3,3v suportados pelo ESP8266. Já vi alguns tutoriais que dispensam o uso do divisor de tensão ou ainda que usam os 3,3v do próprio arduino, eu sei que é frustrante chegar aqui e ter que adquirir mais alguns itens e isto pode demorar dias... Aconteceu comigo também, fique a vontade para fazer suas experiências, sempre levando em consideração que isto pode ser fatal para o seu ESP8266.
 
-<img src="/img/posts/esp8266-intro/espconnection.jpg" style="float:left;margin-right:15px" class="img-thumbnail img-responsive" alt="ESP8266 Conexão">
+<a href="#espconnection">
+	<img src="/img/posts/esp8266-intro/espconnection.jpg" style="float:left;margin-right:15px" class="img-thumbnail img-responsive" alt="ESP8266 Conexão">
+</a>
+<a href="#_" class="lightbox" id="espconnection">
+	<img src="/img/posts/esp8266-intro/espconnection.jpg" class="img-thumbnail" alt="ESP8266 Conexão">
+</a>
 
 A conexão do ESP8266 não serve em uma protoboard, resolvi isto soldando alguns jumpers para facilitar o manuseio, como mostra a imagem ao lado.
 
@@ -22,7 +32,12 @@ O consumo de corrente é ponto a ser observado, ESP8266 pode consumir até **250
 
 E ai está a ligação do ESP8266 com o Arduino!
 
-<img src="/img/posts/esp8266-intro/esparduinoconnections.jpg" class="img-thumbnail img-responsive center-block" alt="ESP8266 Ligação">
+<a href="#esparduinoconnections">
+	<img src="/img/posts/esp8266-intro/esparduinoconnections.jpg" class="img-thumbnail img-responsive center-block" alt="ESP8266 Ligação">
+</a>
+<a href="#_" class="lightbox" id="esparduinoconnections">
+	<img src="/img/posts/esp8266-intro/esparduinoconnections.jpg" class="img-thumbnail" alt="ESP8266 Ligação">
+</a>
 
 Você pode verificar o esquema de ligação com mais detalhes [aqui](https://github.com/eduardoaw/eduardoaw.github.io/blob/master/files/esparduinofritzing.jpg).
 
@@ -63,26 +78,41 @@ Dentro do `loop()` temos uma estrutura de código que permite digitar um comando
 
 O gif abaixo mostrar como operar o Serial Monitor na IDE do Arduino.
 
-<img src="/files/git_at_esp8266.gif" class="img-thumbnail img-responsive center-block" alt="Serial Monitor operação">
+<a href="#git-at-esp8266">
+	<img src="/files/git_at_esp8266.gif" class="img-thumbnail img-responsive center-block" alt="Serial Monitor operação">
+</a>
+<a href="#_" class="lightbox" id="git-at-esp8266">
+	<img src="/files/git_at_esp8266.gif" class="img-thumbnail" alt="Serial Monitor operação">
+</a>
 
 <h3>Comandos AT do ESP8266</h3>
 
 Esta tabela de comandos AT reúne quase todos os comandos disponíveis para ESP8266, caso queira uma mais completa acesse [aqui](https://cdn.sparkfun.com/assets/learn_tutorials/4/0/3/4A-ESP8266__AT_Instruction_Set__EN_v0.30.pdf), porém, seja cauteloso, alguns destes comandos podem ser prejudiciais ao seu ESP8266 se não usados corretamente.
 
-<img src="/img/posts/esp8266-intro/atcommandsesp.jpg" class="img-thumbnail img-responsive center-block" alt="ESP8266 Ligação">
+<a href="#atcommandsesp">
+	<img src="/img/posts/esp8266-intro/atcommandsesp.jpg" class="img-thumbnail img-responsive center-block" alt="ESP8266 Ligação">
+</a>
+<a href="#_" class="lightbox" id="atcommandsesp">
+	<img src="/img/posts/esp8266-intro/atcommandsesp.jpg" class="img-thumbnail" alt="ESP8266 Ligação">
+</a>
 
 <h3>Testando comandos AT</h3>
 
 Usando o programa criado anteriormente é possível testar os comandos AT da tabela acima, vejamos alguns.
 
-</h4>Comandos Básicos<h4>
+<h4>Comandos Básicos</h4>
 
 Para testar os comandos a seguir é importante setar os parametros `Both NL & CR` e a `baud rate` que poderá ser `9600, 57600 ou 115200`.
 Para enviar o comando desejado basta preencher o campo texto da janela do Serial Monitor com o comando e após isto clicar em `Send`.
 
 <h4>Resetando e setando o modo de operação</h4>
 
-<img src="/img/posts/esp8266-intro/resetsetesp.jpg" class="img-thumbnail img-responsive center-block" alt="Reset e set modo de operação">
+<a href="#resetsetesp">
+	<img src="/img/posts/esp8266-intro/resetsetesp.jpg" class="img-thumbnail img-responsive center-block" alt="Reset e set modo de operação">
+</a>
+<a href="#_" class="lightbox" id="resetsetesp">
+	<img src="/img/posts/esp8266-intro/resetsetesp.jpg" class="img-thumbnail" alt="Reset e set modo de operação">
+</a>
 
 Comandos:
 
@@ -94,13 +124,18 @@ Comandos:
 	
 <h4>Conectando-se a uma rede</h4>
 
-<img src="/img/posts/esp8266-intro/connectesp.jpg" class="img-thumbnail img-responsive center-block" alt="Conectando-se a uma rede">
+<a href="#connectesp">
+	<img src="/img/posts/esp8266-intro/connectesp.jpg" class="img-thumbnail img-responsive center-block" alt="Conectando-se a uma rede">
+</a>
+<a href="#_" class="lightbox" id="connectesp">
+	<img src="/img/posts/esp8266-intro/connectesp.jpg" class="img-thumbnail" alt="Conectando-se a uma rede">
+</a>
 
 Comandos:
 
 1. `AT+CWLAP`
 	- Listando redes WiFi próximas
-2. `AT+CWJAP="NomeDaRede","Senha"`
+2. `AT+CWJAP="NomeDaRede"``,"Senha"`
 	- Conectando-se a uma rede 
 3. `AT+CIPSTA="192.168.1.100"`
 	- Atribuindo um endereço IP válido para o ESP8266
@@ -116,13 +151,18 @@ Para testar a conectividade do ESP8266 criei uma ferramenta chamada [Simple Sock
 
 Escolha a opção `Server Mode` do Simple Socket IO para simular um servidor TCP, configure de acordo com a imagem e clique em `Listen`. Neste momento Simple Socket IO está pronto para receber clientes, que no nosso caso será o ESP8266. Clique no Serial Monitor da IDE do Arduino para iniciar o programa no ESP8266.
 
-<img src="/img/posts/esp8266-intro/clienttcpesp.jpg" class="img-thumbnail img-responsive center-block" alt="Cliente TCP">
+<a href="#clienttcpesp">
+	<img src="/img/posts/esp8266-intro/clienttcpesp.jpg" class="img-thumbnail img-responsive center-block" alt="Cliente TCP">
+</a>
+<a href="#_" class="lightbox" id="clienttcpesp">
+	<img src="/img/posts/esp8266-intro/clienttcpesp.jpg" class="img-thumbnail" alt="Cliente TCP">
+</a>
 
 Comandos: 
 
 1. `AT+CIPMUX=1`
 	- Setando ESP8266 para multiplas conexões 
-2. `AT+CIPSTART=0,"TCP","192.168.1.3",3000`
+2. `AT+CIPSTART=0,"TCP"``,"192.168.1.3",3000`
 	- 1º Parâmetro id da conexão
 	- 2º Parametro conexão do tipo TCP
 	- 3º Parâmetro IP do computador que esta o Simple Socket IO
@@ -144,7 +184,12 @@ Comandos:
 
 Escolha a função Client Mode do Simple Socket IO para simular um cliente TCP, configure de acordo com a imagem, não clique em `Connect` por enquanto, primeiro temos que subir o servidor no ESP8266, faça isso clicando no Serial Monitor da IDE do Arduino e após o comando `AT+CIPSERVER=1,5000` `OK` aparecer na janela do Serial Monitor você pode dar um `Connect`.
 
-<img src="/img/posts/esp8266-intro/servertcpesp.jpg" class="img-thumbnail img-responsive center-block" alt="Servidor TCP">
+<a href="#servertcpesp">
+	<img src="/img/posts/esp8266-intro/servertcpesp.jpg" class="img-thumbnail img-responsive center-block" alt="Servidor TCP">
+</a>
+<a href="#_" class="lightbox" id="servertcpesp">
+	<img src="/img/posts/esp8266-intro/servertcpesp.jpg" class="img-thumbnail" alt="Servidor TCP">
+</a>
 
 Comandos:
 
