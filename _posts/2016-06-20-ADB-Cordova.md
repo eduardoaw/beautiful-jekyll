@@ -65,7 +65,7 @@ Use o comando `adb devices` para listar o seu dispositivo. Na imagem abaixo é p
 </a>	
 	
 Vá até o seu projeto cordova e de um `build`. Com o build finalizado irá gerar o `android-debug.apk` que está localizado em 
-<div style="word-break: break-all;"> `<seu projeto cordova>/platforms/android/build/outputs/apk/`. </div>
+<p style="word-break: break-all;"> `<seu projeto cordova>/platforms/android/build/outputs/apk/` </p>
 	
 O comando `adb install android-debug.apk` irá mover e também realizar uma nova instalação do instalador gerado, caso deseje sobrepor uma instalação existente adicione o comando -r,	desta forma `adb install -r android-debug.apk`.
 
