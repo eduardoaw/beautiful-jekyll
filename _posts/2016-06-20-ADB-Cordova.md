@@ -39,7 +39,7 @@ Conecte o seu dispositivo no seu computador utilizando o cabo USB.
 Em **Opções do desenvolvedor** localize por **Depuração USB** e ative-a. Com isto será gerado um aviso **Permitir a depuração USB?**. Fica a seu critério marcar ou não a opção **Sempre permitir a partir deste computador**, eu sempre marco. 
 Clique em OK para finalizar.
 	
-<blockquote><p>Este reconhecimento pode demorar em algumas situações, caso não ocorra verifique se os drivers usb do dispositivo estão instalados em seu computador.</p></blockquote>
+Caso isto não ocorra, acesse [Install OEM USB Drivers](https://developer.android.com/studio/run/oem-usb.html) e [Install the Google USB Driver](https://developer.android.com/studio/run/win-usb.html) seguindo as instruções referentes ao fabricante do seu dispositivo.
 	
 O próximo passo é adicionar **ADB** em suas variáveis de ambiente. 
 A imagem abaixo demonstra o que deve ser feito.
