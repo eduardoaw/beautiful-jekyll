@@ -115,40 +115,40 @@ Abra uma nova janela do **prompt de comando** e digite `android`, em seguida dev
 	
 Na seção `Tools` selecione a versão mais recente de `Android SDK Tools`, `Android SDK Platform-tools` e `Android SDK Build-tools`.
 	
-No momento que escrevo este tutorial Android 6.0 (API 23) é a API mais recente e recomendada por cordova, selecione-a também e em seguida instale.
+No momento que escrevo este tutorial **Android 6.0 (API 23)** é a API mais recente e recomendada por cordova, selecione-a também e em seguida instale.
 	
 E chegamos ao fim da instalação, agora você já é capaz de criar um aplicativo utilizando o **Cordova**.
 	
 <h3>Criando seu primeiro aplicativo</h3>
 	
-Diz a lenda que quando estamos aprendendo uma coisa nova devemos fazer um exemplo HelloWorld antes de qualquer coisa.	Há algumas pessoas que ainda dúvidam disto [Você acredita na maldição/lenda do "Olá Mundo"?](https://br.answers.yahoo.com/question/index?qid=20140805161003AAKccK5) ^^
+Diz a lenda que quando estamos aprendendo uma coisa nova devemos fazer um exemplo HelloWorld antes de qualquer coisa. Há algumas pessoas que ainda dúvidam disto [Você acredita na maldição/lenda do "Olá Mundo"?](https://br.answers.yahoo.com/question/index?qid=20140805161003AAKccK5) ^^
 	
 Na via das dúvidas vamos criar um HelloWorld para compreender como funciona o processo de criação de um aplicativo **Cordova**.
 
-Primeiro abra uma nova janela do prompt de comando e digite o comando `cordova create hello com.example.hello HelloWorld`
+Primeiro abra uma nova janela do prompt de comando e digite o comando `cordova create hello com.example.hello HelloWorld`.
 	
 Cordova irá criar a pasta hello que consiste no parametro que vem após `create` do comando digitado anteriormente. Observe a estrutura criada (imagem abaixo), a pasta `www` contém os arquivos HTML, CSS e JS em uma estrutura na qual você já deve estar acostumado a ver em projetos Web.
 	
 <a href="#new-project">
-	<img src="/img/posts/install-cordova/new-project.jpg" class="img-thumbnail img-responsive" alt="New Project Cordova">
+	<img src="/img/posts/install-cordova/new-project.JPG" class="img-thumbnail img-responsive" alt="New Project Cordova">
 </a>
 <a href="#_" class="lightbox" id="new-project">
-	<img src="/img/posts/install-cordova/new-project.jpg" class="img-thumbnail" alt="New Project Cordova">
+	<img src="/img/posts/install-cordova/new-project.JPG" class="img-thumbnail" alt="New Project Cordova">
 </a>
 
 O próximo passo é adicionar uma plataforma na qual o aplicativo irá executar depois de compilado, no caso adicionaremos Android. Faça isto executando o comando `cordova platform add android`.
 	
 Com a plataforma adicionada estamos prontos para compilar o nosso primeiro aplicativo. Faça isto executando o comando `cordova build`.
 	
-<blockquote><p>O primeiro build é normal demorar um pouco, poís é necessário baixar o **Gradle** que consite em um sistema avançado de automatização de builds que une o melhor da flexibilidade do **Ant** com o gerenciamento de dependencias e as convenções do **Maven**.
+O primeiro build é normal demorar um pouco, poís é necessário baixar o **Gradle** que consite em um sistema avançado de automatização de builds que une o melhor da flexibilidade do **Ant** com o gerenciamento de dependencias e as convenções do **Maven**.
 	
-Ao final do build teremos o **.apk** que é o instalador do seu aplicativo localizado em `<seu projeto>\platforms\android\build\outputs\apk` 
+Ao final do build teremos o **.apk** que é o instalador do seu aplicativo localizado em `<seu projeto> \platforms\android\build\outputs\apk` 
 
 <a href="#cordova-platform">
-	<img src="/img/posts/install-cordova/cordova-platform.jpg" class="img-thumbnail img-responsive" alt="Cordova Platform">
+	<img src="/img/posts/install-cordova/cordova-platform.JPG" class="img-thumbnail img-responsive" alt="Cordova Platform">
 </a>
 <a href="#_" class="lightbox" id="cordova-platform">
-	<img src="/img/posts/install-cordova/cordova-platform.jpg" class="img-thumbnail" alt="Cordova Platform">
+	<img src="/img/posts/install-cordova/cordova-platform.JPG" class="img-thumbnail" alt="Cordova Platform">
 </a>
 	
 Transfira o instalador para o seu dispositivo e execute-o, caso solicitado habilite a instalação de fontes desconhecidas.
@@ -156,10 +156,10 @@ Transfira o instalador para o seu dispositivo e execute-o, caso solicitado habil
 Você também pode executar seu aplicativo em um emulador em sua máquina, para isto execute o comando `cordova emulate android`
 	
 <a href="#cordova-emulate">
-	<img src="/img/posts/install-cordova/cordova-emulate.jpg" class="img-thumbnail img-responsive" alt="Cordova Emulate">
+	<img src="/img/posts/install-cordova/cordova-emulate.JPG" class="img-thumbnail img-responsive" alt="Cordova Emulate">
 </a>
 <a href="#_" class="lightbox" id="cordova-emulate">
-	<img src="/img/posts/install-cordova/cordova-emulate.jpg" class="img-thumbnail" alt="Cordova Emulate">
+	<img src="/img/posts/install-cordova/cordova-emulate.JPG" class="img-thumbnail" alt="Cordova Emulate">
 </a>
 	
 <blockquote><p>A menos que você tenha um super computador eu não aconselho emular aplicativos, poís é muito lento. Indico utilizar o seu dispositivo fisíco para isto.</p></blockquote>
@@ -169,7 +169,7 @@ Se você chegou até aqui, recomendo seguir um outro tutorial que fiz, [Montando
 E é isto, caso tenha alguma dúvida ou sugestão comente abaixo.
 	
 <b>Fontes</b>
-Apache Cordova. https://cordova.apache.org/
-Apache Cordova, Create your first app. [https://cordova.apache.org/docs/en/latest/guide/cli/](https://cordova.apache.org/docs/en/latest/guide/cli/)
-EVO Things, Installing Cordova on Windows. [https://evothings.com/doc/build/cordova-install-windows.html](https://evothings.com/doc/build/cordova-install-windows.html)
-Adriano Lisboa, Afinal de contas, o que é o gradle e como usá-lo? [http://adrianolisboa.com/afinal-de-contas-o-que-e-o-gradle-e-como-usa-lo/](http://adrianolisboa.com/afinal-de-contas-o-que-e-o-gradle-e-como-usa-lo/)
+[Apache Cordova](https://cordova.apache.org/).
+[Apache Cordova, Create your first app](https://cordova.apache.org/docs/en/latest/guide/cli).
+[EVO Things, Installing Cordova on Windows](https://evothings.com/doc/build/cordova-install-windows.html).
+[Adriano Lisboa, Afinal de contas, o que é o gradle e como usá-lo?](http://adrianolisboa.com/afinal-de-contas-o-que-e-o-gradle-e-como-usa-lo/).
