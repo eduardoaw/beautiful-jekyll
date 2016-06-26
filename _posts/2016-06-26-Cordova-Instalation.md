@@ -42,10 +42,10 @@ Esta [questão](http://pt.stackoverflow.com/questions/5024/como-mudar-o-path-nos
 Verifique se o **Node.js** está instalado em seu sistema, abrindo uma nova janela do **prompt de comando** e digitando `node --version`.
 	
 <a href="#install-node">
-	<img src="/img/posts/install-cordova/node-version.jpg" class="img-thumbnail img-responsive" alt="Instalação Node.js">
+	<img src="/img/posts/install-cordova/node-version.JPG" class="img-thumbnail img-responsive" alt="Instalação Node.js">
 </a>
 <a href="#_" class="lightbox" id="install-node">
-	<img src="/img/posts/install-cordova/node-version.jpg" class="img-thumbnail" alt="Instalação Node.js">
+	<img src="/img/posts/install-cordova/node-version.JPG" class="img-thumbnail" alt="Instalação Node.js">
 </a>
 	
 <blockquote><p>No momento que escrevo este tutorial a verão é 4.4.4, note que a versão Node.js pode ser maior para você.</p></blockquote>
@@ -85,10 +85,10 @@ Se você já possuí a JDK instalada(com versão maior ou igual 1.6)  passe para
 Após instalada verifique a sua versão abrindo uma nova janela do **prompt de comando** e digitando `javac -version`.
 	
 <a href="#javac-version">
-	<img src="/img/posts/install-cordova/javac-version.jpg" class="img-thumbnail img-responsive" alt="Javac Version">
+	<img src="/img/posts/install-cordova/javac-version.JPG" class="img-thumbnail img-responsive" alt="Javac Version">
 </a>
 <a href="#_" class="lightbox" id="javac-version">
-	<img src="/img/posts/install-cordova/javac-version.jpg" class="img-thumbnail" alt="Javac Version">
+	<img src="/img/posts/install-cordova/javac-version.JPG" class="img-thumbnail" alt="Javac Version">
 </a>
 	
 Caso não retorne a versão, adicione o caminho de instalação java + pasta bin nas suas **variáveis de ambiente**, que no meu caso é `C:\Program Files\Java\jdk1.8.0_91\bin`.
