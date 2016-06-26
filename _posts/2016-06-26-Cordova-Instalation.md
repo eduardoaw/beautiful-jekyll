@@ -170,7 +170,7 @@ E é isto, caso tenha alguma dúvida ou sugestão comente abaixo.
 	
 <b>Fontes</b>
 
-[Apache Cordova](https://cordova.apache.org/).
-[Apache Cordova, Create your first app](https://cordova.apache.org/docs/en/latest/guide/cli).
-[EVO Things, Installing Cordova on Windows](https://evothings.com/doc/build/cordova-install-windows.html).
+[Apache Cordova](https://cordova.apache.org/).<br>
+[Apache Cordova, Create your first app](https://cordova.apache.org/docs/en/latest/guide/cli).<br>
+[EVO Things, Installing Cordova on Windows](https://evothings.com/doc/build/cordova-install-windows.html).<br>
 [Adriano Lisboa, Afinal de contas, o que é o gradle e como usá-lo?](http://adrianolisboa.com/afinal-de-contas-o-que-e-o-gradle-e-como-usa-lo/).
