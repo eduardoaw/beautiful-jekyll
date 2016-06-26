@@ -169,6 +169,7 @@ Se você chegou até aqui, recomendo seguir um outro tutorial que fiz, [Montando
 E é isto, caso tenha alguma dúvida ou sugestão comente abaixo.
 	
 <b>Fontes</b>
+
 [Apache Cordova](https://cordova.apache.org/).
 [Apache Cordova, Create your first app](https://cordova.apache.org/docs/en/latest/guide/cli).
 [EVO Things, Installing Cordova on Windows](https://evothings.com/doc/build/cordova-install-windows.html).
