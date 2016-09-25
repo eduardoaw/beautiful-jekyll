@@ -9,6 +9,6 @@ O Guri ai do lado sou eu há uns anos atrás ;D, sempre gostei de tecnologias e 
 
 Atualmente trabalho como programador de aplicações usando Java EE e Linguagens Web.
 
-Sou graduado em Sitemas de Informação pela [URI](http://santoangelo.uri.br) e tenho interesse por novas tecnologias que facilitem a vida do usuário. 
+Sou graduado em Sistemas de Informação pela [URI](http://santoangelo.uri.br) e tenho interesse por novas tecnologias que facilitem a vida do usuário. 
 
 Fiz esta página para compartilhar o que venho aprendendo. 
