@@ -95,6 +95,16 @@ Caso não retorne a versão, adicione o caminho de instalação java + pasta bin
 
 Verifique se `JAVA_HOME` está em suas **variáveis de ambiente**, caso não, adicione com o caminho da instalação **Java**, que no meu caso é `C:\Program Files\Java\jdk1.8.0_91`.
 	
+<h4>Gradle</H4>
+
+<blockquote><p>O post original não previa a instalação do **Gradle** por isto estou adicionando os passos para adiciona-lo a sua instalação.
+Este edit (13/09/2018) foi originado por uma dúvida do leitor **Celianio Silva** que você pode encontrar nos comentários no final do post.</p></blockquote>
+
+Baixe o **Gradle** em [https://downloads.gradle.org/distributions/gradle-4.10.1-bin.zip](https://downloads.gradle.org/distributions/gradle-4.10.1-bin.zip)
+No momento deste edit a versão mais atual é 4.10.1, mas você pode consultar novas versões em [Gradle Releases](https://gradle.org/releases/)
+
+Em seguida descompacte o arquivo baixado na sua pasta Arquivos de Programas e adicione o caminho até a pasta bin do Gradle (Ex: C:\Program Files....\gradle\bin) nas suas variáveis de ambiente.
+
 <h4>Android SDK</h4>
 	
 **Android SDK** é usado por **Cordova** para construir aplicativos **Android**.
@@ -140,7 +150,7 @@ O próximo passo é adicionar uma plataforma na qual o aplicativo irá executar 
 	
 Com a plataforma adicionada estamos prontos para compilar o nosso primeiro aplicativo. Faça isto executando o comando `cordova build`.
 	
-O primeiro build é normal demorar um pouco, poís é necessário baixar o **Gradle** que consite em um sistema avançado de automatização de builds que une o melhor da flexibilidade do **Ant** com o gerenciamento de dependencias e as convenções do **Maven**.
+O primeiro build é normal demorar um pouco, poís é necessário preparar o **Gradle** que consite em um sistema avançado de automatização de builds que une o melhor da flexibilidade do **Ant** com o gerenciamento de dependencias e as convenções do **Maven**.
 	
 Ao final do build teremos o **.apk** que é o instalador do seu aplicativo localizado em `<seu projeto> \platforms\android\build\outputs\apk` 
 
