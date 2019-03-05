@@ -12,7 +12,7 @@ title: Instalando o ambiente de desenvolvimento de aplicativos Apache Cordova
 
 [Apache Cordova](https://cordova.apache.org/) é um popular framework de desenvolvimento de aplicativos móveis, que permite a desenvolvedores de software construir aplicações para dispositivos móveis usando CSS3, HTML5 e JavaScript em vez de depender de APIs de plataforma específicas como Android, iOS ou Windows Phone. 
 	
-Você já deve ter se perguntado, desenvolvo meu aplicativo com **Cordova** ou [PhoneGap](http://phonegap.com), se sim considere ler [7 Things to Consider When Making iOS and Android Apps with Cordova or PhoneGap](http://www.addthis.com/blog/2014/10/27/7-things-to-consider-when-making-ios-and-android-apps-with-cordova-or-phonegap/#.V2vysvkrJxA) para tirar esta dúvida. O texto também abrange informações sobre dispositivos e sistemas operacionais suportados, é uma boa leitura antes de começar.
+É bem provavel que você chegou aqui depois de pesquisas relacionadas ao **Cordova** ou [PhoneGap](http://phonegap.com). Considere ler [7 Things to Consider When Making iOS and Android Apps with Cordova or PhoneGap](http://www.addthis.com/blog/2014/10/27/7-things-to-consider-when-making-ios-and-android-apps-with-cordova-or-phonegap/#.V2vysvkrJxA) para ver qual deles pode atender suas necessidades. O texto também abrange informações sobre dispositivos e sistemas operacionais suportados, é uma boa leitura antes de começar.
 
 Ao final do texto deste tutorial você estará apto a criar sua primeira aplicação, com uma instalação "limpa", usando somente **Cordova**, sem a necessidade de instalação de IDEs ou ferramentas auxiliares para isto.
 	
